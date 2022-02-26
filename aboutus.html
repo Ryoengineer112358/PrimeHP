@@ -5,21 +5,50 @@
         <title>Prime-kobetsu</title>
         <link rel="stylesheet" href="stylesheet.css">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css">
+        <link rel="stylesheet" href="smart.css" type="text/css" media="(max-width: 670px)" >
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
         <header>
-            <div class="header-logo">オンライン個別指導塾プライム</div>
-                <div class="right-content">
-                    <div class="header-list">
-                        <a href="index.html">ホーム</a>
-                        <a href="aboutus.html">About us</a>
-                        <a href="tutor.html">講師紹介</a>
-                        <a href="price.html"> 料金</a>
-                        <a href="success.html">合格者の声</a>
-                        <a href="question.html">よくある質問</a>
-                        <a class="selected" href="contactus.html">お問い合わせ</a>
-                    </div>
+            <a href="index.html" class="header-logo">オンライン個別指導塾プライム</a>
+            <div class="hamburger-menu">
+                <input type="checkbox" id="menu-btn-check">
+                <label for="menu-btn-check" class="menu-btn"><span></span></label>
+                <div class="menu-content">
+                    <ul>
+                        <li>
+                            <a href="index.html">ホーム</a>
+                        </li>
+                        <li>
+                            <a href="aboutus.html">About us</a>
+                        </li>
+                        <li>
+                            <a href="tutor.html">講師紹介</a>
+                        </li>
+                        <li>
+                            <a href="price.html"> 料金</a>
+                        </li>
+                        <li>
+                            <a href="success.html">合格者の声</a>
+                        </li>
+                        <li>
+                            <a href="question.html">よくある質問</a>
+                        </li>
+                        <li>
+                            <a href="contactus.html">お問い合わせ</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="right-content">
+                <div class="header-list">
+                    <a href="index.html">ホーム</a>
+                    <a href="aboutus.html">About us</a>
+                    <a href="tutor.html">講師紹介</a>
+                    <a href="price.html"> 料金</a>
+                    <a href="success.html">合格者の声</a>
+                    <a href="question.html">よくある質問</a>
+                    <a class="selected" href="contactus.html">お問い合わせ</a>
                 </div>
             </div>
         </header>
@@ -29,19 +58,20 @@
                     <i class="far fa-star fa-3x star-icon"></i>
                     <h1>プライムの３つの特徴</h1>
                 </div>
-                <div class="feature-item">
-                    <h3>確かな指導力</h3>
-                    <p>生徒一人ひとりひとり、得意なこと、苦手なこと、性格や目標は異なります。個別指導塾プライムではそれぞれに最適な指導を行うことで、成長を促します。当教室の目的は短期的な目標の達成だけではなく、自ら学習する力を育てること。生徒主体の学習が、飛躍的な成長への秘訣です。</p>
+                <div class="flex-list">
+                    <div class="flex-li">
+                        <h3>確かな指導力</h3>
+                        <p>生徒一人ひとりひとり、得意なこと、苦手なこと、性格や目標は異なります。個別指導塾プライムではそれぞれに最適な指導を行うことで、成長を促します。当教室の目的は短期的な目標の達成だけではなく、自ら学習する力を育てること。生徒主体の学習が、飛躍的な成長への秘訣です。</p>
+                    </div>
+                    <div class="flex-li">
+                        <h3>独自のメソッド</h3>
+                        <p>個別指導塾プライムの講師は全員、高い教養と指導力を持っています。生徒一人ひとりの個性に向き合い授業を進めることでやる気を引き出し、確実な成果へと導きます。</p>
+                    </div>
+                    <div class="flex-li">
+                        <h3>高い合格実績</h3>
+                        <p>各生徒に合わせた独自カリキュラムが個別指導塾プライムの強みです。学習が進むにつれ生徒の自主学習能力も向上するため、定期的な面談を行い、その都度課題や改善点を確認することで効率的な指導を実現します。</p>
+                    </div>
                 </div>
-                <div class="feature-item">
-                    <h3>独自のメソッド</h3>
-                    <p>個別指導塾プライムの講師は全員、高い教養と指導力を持っています。生徒一人ひとりの個性に向き合い授業を進めることでやる気を引き出し、確実な成果へと導きます。</p>
-                </div>
-                <div class="feature-item">
-                    <h3>高い合格実績</h3>
-                    <p>各生徒に合わせた独自カリキュラムが個別指導塾プライムの強みです。学習が進むにつれ生徒の自主学習能力も向上するため、定期的な面談を行い、その都度課題や改善点を確認することで効率的な指導を実現します。</p>
-                </div>
-                <div class="clear"></div>
             </div>
         </div>
         <div class="course-wrapper">
@@ -52,34 +82,35 @@
                     <p>プライムでは指導の時間数を３つのコースからお選びいただけます。またこれに授業時間を追加したい場合はオプション制度を利用することが出来ます。</p>
                     <a href="price.html" class="btn-price price">料金の詳細はこちら</a>
                 </div>
-                <div class="course-item">
-                    <h3>スタンダードパック</h3>
-                    <ul>
-                        <li>月に240分担当講師がカリキュラム作成、学習の進捗管理、質問対応、テーマ講義などを中心に行います。</li>
-                        <li>希望者は塾長との面談ができます。</li>
-                        <li>授業時間外も担当講師との相談が可能となっております。</li>
-                        <li>大手予備校などに通っている方に最適のプランです。</li>
-                    </ul>
+                <div class="flex-list2">
+                        <div class="flex-li">
+                            <h3>スタンダードパック</h3>
+                            <ul>
+                                <li>月に240分担当講師がカリキュラム作成、学習の進捗管理、質問対応、テーマ講義などを中心に行います。</li>
+                                <li>希望者は塾長との面談ができます。</li>
+                                <li>授業時間外も担当講師との相談が可能となっております。</li>
+                                <li>大手予備校などに通っている方に最適のプランです。</li>
+                            </ul>
+                        </div>
+                        <div class="flex-li">
+                            <h3>ゴールドパック</h3>
+                            <ul>
+                                <li>月に480分担当講師がカリキュラム作成、学習の進捗管理、質問対応、テーマ講義を中心に行います。</li>
+                                <li>適宜生徒一人一人にカスタマイズした演習なども行います。</li>
+                                <li>希望者は塾長との面談ができます。</li>
+                                <li>授業時間外も担当講師の相談が可能となっております。</li>
+                            </ul>
+                        </div>
+                        <div class="flex-li">
+                            <h3>プラチナパック</h3>
+                            <ul>
+                                <li>月に720分担当講師がカリキュラム作成、学習の進捗管理、質問対応、テーマ講義を中心に行います。</li>
+                                <li>ゴールドパックの演習に加え、医学部受験生の面接対策など、合格に直結する指導全般を行います。</li>
+                                <li>希望者は塾長との面談ができます。</li>
+                                <li>授業時間外も担当講師の相談が可能となっております。</li>
+                            </ul>
+                        </div>
                 </div>
-                <div class="course-item">
-                    <h3>ゴールドパック</h3>
-                    <ul>
-                        <li>月に480分担当講師がカリキュラム作成、学習の進捗管理、質問対応、テーマ講義を中心に行います。</li>
-                        <li>適宜生徒一人一人にカスタマイズした演習なども行います。</li>
-                        <li>希望者は塾長との面談ができます。</li>
-                        <li>授業時間外も担当講師の相談が可能となっております。</li>
-                    </ul>
-                </div>
-                <div class="course-item">
-                    <h3>プラチナパック</h3>
-                    <ul>
-                        <li>月に720分担当講師がカリキュラム作成、学習の進捗管理、質問対応、テーマ講義を中心に行います。</li>
-                        <li>ゴールドパックの演習に加え、医学部受験生の面接対策など、合格に直結する指導全般を行います。</li>
-                        <li>希望者は塾長との面談ができます。</li>
-                        <li>授業時間外も担当講師の相談が可能となっております。</li>
-                    </p>
-                </div>
-                <div class="clear"></div>
             </div>
         </div>
 

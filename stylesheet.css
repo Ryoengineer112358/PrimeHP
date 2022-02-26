@@ -2,6 +2,9 @@ body {
     font-family: serif;
     animation: fadeIn 1.0s cubic-bezier(.56,.58,.63,.63) 1 forwards;
 }
+a {
+    text-decoration: none;
+}
 @keyframes fadeIn {
     0% {
       opacity: 0;
@@ -20,7 +23,7 @@ body {
     width: 100%;
     margin: 0 auto;
     max-width: 1170px;
-    min-width: 1170px;
+    /* min-width: 1170px; */
 }
 .header-logo {
     color: #193669;
@@ -33,7 +36,6 @@ body {
     float: left;
     font-size: 10;
     padding: 30px 10px;
-    text-decoration: none;
 }
 .selected {
     margin-right: 50px;
@@ -41,6 +43,202 @@ body {
 .right-content {
     float: right;
 }
+
+
+
+
+
+/* .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    background: #fff;
+  }
+  
+  .logo {
+    font-size: 20px;
+    color: #193669;
+  } */
+  
+  /* ここから下がハンバーガーメニューに関するCSS */
+    
+  /* チェックボックスを非表示にする */
+  /* .drawer_hidden {
+    display: none;
+  } */
+  
+  /* ハンバーガーアイコンの設置スペース */
+  /* .drawer_open {
+    display: flex;
+    height: 60px;
+    width: 60px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 100;重なり順を一番上にする
+    cursor: pointer;
+    display: none;
+  } */
+  
+  /* ハンバーガーメニューのアイコン */
+  /* .drawer_open span,
+  .drawer_open span:before,
+  .drawer_open span:after {
+    content: '';
+    display: block;
+    height: 3px;
+    width: 25px;
+    border-radius: 3px;
+    background: #193669;
+    transition: 0.5s;
+    position: absolute;
+  } */
+  
+  /* 三本線の一番上の棒の位置調整 */
+  /* .drawer_open span:before {
+    bottom: 8px;
+  } */
+  
+  /* 三本線の一番下の棒の位置調整 */
+  /* .drawer_open span:after {
+    top: 8px;
+  } */
+  
+  /* アイコンがクリックされたら真ん中の線を透明にする */
+  /* #drawer_input:checked ~ .drawer_open span {
+    background: rgba(255, 255, 255, 0);
+  }
+   */
+  /* アイコンがクリックされたらアイコンが×印になように上下の線を回転 */
+  /* #drawer_input:checked ~ .drawer_open span::before {
+    bottom: 0;
+    transform: rotate(45deg);
+  }
+  
+  #drawer_input:checked ~ .drawer_open span::after {
+    top: 0;
+    transform: rotate(-45deg);
+  } */
+    
+  /* メニューのデザイン*/
+  /* .nav_content {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 100%; メニューを画面の外に飛ばす
+    z-index: 99;
+    background: #fff;
+    transition: .5s;
+  }
+   */
+  /* .nav_item {
+    color: #193669;
+    font-size: 20px;
+  } */
+
+  /* メニュー黒ポチを消す */
+  /* .nav_list {
+    list-style: none;
+  } */
+  
+  /* アイコンがクリックされたらメニューを表示 */
+  /* #drawer_input:checked ~ .nav_content { */
+    /* left: 0;メニューを画面に入れる
+  }
+ */
+
+
+
+
+.menu-btn {
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    display: flex;
+    height: 60px;
+    width: 60px;
+    justify-content: center;
+    align-items: center;
+    z-index: 90;
+    background-color: #193669;
+    display: none;
+}
+.menu-btn span,
+.menu-btn span:before,
+.menu-btn span:after {
+    content: '';
+    display: block;
+    height: 3px;
+    width: 25px;
+    border-radius: 3px;
+    background-color: #ffffff;
+    position: absolute;
+}
+.menu-btn span:before {
+    bottom: 8px;
+}
+.menu-btn span:after {
+    top: 8px;
+}
+#menu-btn-check:checked ~ .menu-btn span {
+    background-color: rgba(255, 255, 255, 0);
+}
+#menu-btn-check:checked ~ .menu-btn span::before {
+    bottom: 0;
+    transform: rotate(45deg);
+}
+#menu-btn-check:checked ~ .menu-btn span::after {
+    top: 0;
+    transform: rotate(-45deg);
+}
+#menu-btn-check:checked ~ .menu-content {
+    left: 0;
+}
+#menu-btn-check {
+    display: none;
+}
+.menu-content {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 100%;
+    z-index: 80;
+    background-color: #193669;
+    transition: all 0.5s;
+}
+.menu-content ul {
+    padding: 70px 10px 0;
+}
+.menu-content ul li {
+    border-bottom: solid 1px #ffffff;
+    list-style: none;
+}
+.menu-content ul li a {
+    display: block;
+    width: 100%;
+    font-size: 15px;
+    box-sizing: border-box;
+    color:#ffffff;
+    text-decoration: none;
+    padding: 9px 15px 10px 0;
+    position: relative;
+}
+.menu-content ul li a::before {
+    content: "";
+    width: 7px;
+    height: 7px;
+    border-top: solid 2px #ffffff;
+    border-right: solid 2px #ffffff;
+    transform: rotate(45deg);
+    position: absolute;
+    right: 11px;
+    top: 16px;
+}
+
+
 header {
     background-color: white;
     height: 90px;
@@ -52,7 +250,7 @@ header {
     z-index: 10; 
 }
 .top-margin {
-    height: 80px;
+    height: 55px;
 }
 footer {
     text-align: center;
@@ -87,6 +285,8 @@ img {
     height: 630px;
     text-align: center;
     width: 100%;
+    background-color:rgba(255,255,255,0.4);
+    background-blend-mode:lighten;
     background-image: url(https://images.unsplash.com/photo-1501504905252-473c47e087f8?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2767&q=80);
     background-size: cover;
 
@@ -135,6 +335,129 @@ img {
     color: white;
 }
 
+/* 以下aboutusの記述 */
+.feature-wrapper {
+    padding-top: 200px;
+    padding-bottom: 100px;
+    background-color: rgb(247,247,247);
+    text-align: center;
+}
+.star-icon {
+    color: rgb(25,54,105);
+    padding-top: 50px;
+}
+.flex-list {
+    display: flex;
+}
+.flex-li {
+    flex: auto;
+    flex: 1;
+    padding: 15px;
+    margin: 15px;
+}
+.flex-list h3 {
+    color: rgb(25,54,105);
+    text-align: center;
+    font-size: 30px;
+}
+.flex-list p {
+    text-align: center;
+    font-size: 20px;
+}
+.features h1{
+    padding-top: 80px;
+    padding-bottom: 50px;
+    color: rgb(25,54,105);
+    text-align: center;
+    font-size: 40px;
+    font-weight: normal;
+}   
+.course-wrapper {
+    padding: 150px 100px 100px 100px;
+    background-color: #193669;
+    text-align: center;
+}
+.course {
+    color: white;
+}
+.course h1 {
+    padding-top: 50px;
+    font-size: 40px;
+}
+.course p {
+    padding: 0 200px 50px 200px;
+}
+.btn-price {
+    padding: 12px 30px;
+    color: #193669;
+    display: inline-block;
+    cursor: pointer;
+    text-decoration: none;
+}
+.price {
+    background-color: white;
+    margin-top: 15px;
+    margin-bottom: 100px;
+}
+.flex-list2 {
+    display: flex;
+}
+.flex-list2 h3 {
+    color: white;
+    text-align: center;
+    font-size: 30px;
+}
+.flex-list2 li {
+    color: white;
+    text-align: center;
+    font-size: 18px;
+}
+.example-wrapper {
+    background-color: rgb(247,247,247);
+    text-align: left;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.example {
+    background-color: white;
+    padding: 50px 100px;
+}
+.example p {
+    font-size: 20px;
+}
+
+/* 以下successの記述 */
+.success-wrapper {
+    padding: 200px 0 80px 0;
+}
+.success h1 {
+    font-size: 40px;
+    padding-bottom: 10px;
+    color: rgb(25,54,105);
+    text-align: center;
+}
+.success p {
+    font-size: 20px;
+    text-align: center;
+}
+.students-wrapper {
+    padding-top: 30px;
+    background-color: rgb(247,247,247);
+}
+.students h3 {
+    color: rgb(25,54,105);
+    font-size: 25px;
+    padding: 0 100px 10px 100px;
+}
+.students h4 {
+    font-size: 20px;
+    padding: 0 100px 0 100px;
+}
+.students p {
+    font-size: 18px;
+    padding: 0 100px 80px 100px;
+}
+
 /* 以下tutorの記述 */
 .tutors-wrapper {
     margin: 200px 0 80px 0;
@@ -181,121 +504,36 @@ img {
     color: rgb(25,54,105);
     font-size: 40px;
 }
+.aboutprice {
+    margin-bottom: 20px;
+    padding-bottom: 30px;
+}
 .aboutprice p {
     padding: 0 100px;
     font-size: 20px;
 }
-.price-item {
-    padding: 50px 30px 0 30px;
-    width: 26.3%;
-    margin: 40px;
-    float: left;
-    background-color: white;
-    height: 500px;
+.flex-list3 {
+    display: flex;
 }
-.price-item h4 {
+.flex-li2 {
+    flex: auto;
+    flex: 1;
+    padding: 50px 20px 10px 20px;
+    margin: 20px 30px 60px 50px;
+    background-color: white;
+}
+.flex-list3 h4 {
     color: rgb(25,54,105);
     text-align: center;
     font-size: 30px;
 }
-.price-item p {
+.flex-list3 p {
     text-align: center;
     font-size: 20px;
 }
 .price-icon {
     color: rgb(25,54,105);
 }
-
-/* 以下aboutusの記述 */
-.feature-wrapper {
-    padding-top: 200px;
-    padding-bottom: 100px;
-    background-color: rgb(247,247,247);
-    text-align: center;
-}
-.star-icon {
-    color: rgb(25,54,105);
-    padding-top: 50px;
-}
-.features h1{
-    padding-top: 80px;
-    padding-bottom: 50px;
-    color: rgb(25,54,105);
-    text-align: center;
-    font-size: 40px;
-    font-weight: normal;
-}   
-.feature-item {
-    width: 33.3%;
-    float: left;
-    padding: 20px;
-}
-.feature-item h3 {
-    color: rgb(25,54,105);
-    text-align: center;
-    font-size: 30px;
-}
-.feature-item p {
-    text-align: center;
-    font-size: 20px;
-}
-.course-wrapper {
-    padding: 150px 100px 100px 100px;
-    background-color: #193669;
-    text-align: center;
-}
-.course {
-    color: white;
-}
-.course h1 {
-    padding-top: 50px;
-    font-size: 40px;
-}
-.course p {
-    padding: 0 200px 50px 200px;
-}
-.btn-price {
-    padding: 12px 30px;
-    color: #193669;
-    display: inline-block;
-    cursor: pointer;
-    text-decoration: none;
-}
-.price {
-    background-color: white;
-    margin-top: 15px;
-    margin-bottom: 100px;
-}
-.course-item {
-    width: 33.3%;
-    float: left;
-    padding: 20px;
-}
-.course-item h3 {
-    color: white;
-    text-align: center;
-    font-size: 30px;
-}
-.course-item li {
-    color: white;
-    text-align: center;
-    font-size: 18px;
-    padding: 5px 0;
-}
-.example-wrapper {
-    background-color: rgb(247,247,247);
-    text-align: left;
-    padding-top: 100px;
-    padding-bottom: 100px;
-}
-.example {
-    background-color: white;
-    padding: 50px 100px;
-}
-.example p {
-    font-size: 20px;
-}
-
 
 /* 以下successの記述 */
 .success-wrapper {
@@ -328,6 +566,7 @@ img {
     font-size: 18px;
     padding: 0 100px 80px 100px;
 }
+
 /* 以下questionsの記述 */
 .questions-wrapper {
     padding-top: 200px;
@@ -359,6 +598,7 @@ img {
     padding-right: 100px;
     font-size: 18px;
 }
+
 /* 以下contactusの記述 */
 .contact-wrapper {
     background-color: rgb(247,247,247);
