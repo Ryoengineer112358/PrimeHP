@@ -170,16 +170,40 @@ img {
     height: 100%;
     object-fit: contain;
 }
-.achievement-wrapper {
+/* .achievement-wrapper {
     background-image: url(https://static.wixstatic.com/media/97db0e_d06cc84dc23b4bac83c461bcc6b4fa3e~mv2.png/v1/fill/w_965,h_650,fp_0.50_0.50,q_90/97db0e_d06cc84dc23b4bac83c461bcc6b4fa3e~mv2.webp);
     background-size: cover;
     object-fit: contain;
 
     width: 100%;
     height: auto;
+} */
+
+.achievement-wrapper {
+    padding: 100px 0;
+    text-align: center;
+    width: 100%;
+    background-color:rgba(255,255,255,0.4);
+    background-blend-mode:lighten;
+    background-image: url(https://free-materials.com/adm/wp-content/uploads/2016/09/741738bc653bd596a517196e832796e9-750x499.jpg);
+    background-size: cover;
+}
+.achievement-wrapper h1 {
+    color: #193669;
+    text-align: center;
+    font-size: 72px;
+    font-weight: bold;
+}
+.achievement-wrapper h2 {
+    font-size: 48px;
+}
+.achievement-wrapper h4 {
+    font-size: 36px;
+}
+.achievement-wrapper p {
+    font-size: 24px;
 }
 .message-wrapper {
-    
     height: 630px;
     text-align: center;
     width: 100%;
@@ -187,7 +211,6 @@ img {
     background-blend-mode:lighten;
     background-image: url(https://images.unsplash.com/photo-1501504905252-473c47e087f8?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2767&q=80);
     background-size: cover;
-
 }
 .message-wrapper h1 {
     margin-top: 0;

@@ -20,6 +20,30 @@ footer {
 }
 
 /* 以下index.htmlの記述 */
+.achievement-wrapper {
+    padding: 50px 0;
+    text-align: center;
+    width: 100%;
+    background-color:rgba(255,255,255,0.4);
+    background-blend-mode:lighten;
+    background-image: url(https://free-materials.com/adm/wp-content/uploads/2016/09/741738bc653bd596a517196e832796e9-750x499.jpg);
+    background-size: cover;
+}
+.achievement-wrapper h1 {
+    color: #193669;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+}
+.achievement-wrapper h2 {
+    font-size: 20px;
+}
+.achievement-wrapper h4 {
+    font-size: 30px;
+}
+.achievement-wrapper p {
+    font-size: 18px;
+}
 .message-wrapper {
     height: 300px;
 }
