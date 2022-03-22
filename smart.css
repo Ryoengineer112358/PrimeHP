@@ -1,9 +1,12 @@
 .header-logo {
+    display: none;
+}
+.header-logo2 {
+    display: block;
     color: #193669;
-    font-size: 20px;
-    text-align: center;
-    padding-top: 30px;
-    padding-left: 15px;
+    font-size: 25px;
+    padding-top: 28px;
+    padding-left: 20px;
 }
 .right-content {
     display: none;
