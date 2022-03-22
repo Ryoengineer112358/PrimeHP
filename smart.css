@@ -35,8 +35,12 @@ footer {
     font-size: 40px;
     font-weight: bold;
 }
-.achievement-wrapper h2 {
-    font-size: 20px;
+.achieve-horizontal {
+    display: none;
+}
+.achieve-vertical {
+    display: block;
+    font-size: 35px;
 }
 .achievement-wrapper h4 {
     font-size: 30px;

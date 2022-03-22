@@ -194,8 +194,11 @@ img {
     font-size: 72px;
     font-weight: bold;
 }
-.achievement-wrapper h2 {
+.achieve-horizontal {
     font-size: 48px;
+}
+.achieve-vertical {
+    display: none;
 }
 .achievement-wrapper h4 {
     font-size: 36px;
